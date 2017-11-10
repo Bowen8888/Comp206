@@ -1,0 +1,34 @@
+Question1
+
+Part a)
+
+when cat answer.txt, there is no read permission
+
+command to diagnose failures:
+
+$cd Downloads/206_assign1_provided/Problem1
+$ls -l
+
+the outcome shows that answer.txt does not have any permission (especially, no read permission)
+
+$test -r answer.txt
+$echo $?
+
+the outcome 1 shows also that there is no read permission for file answer.txt
+
+Part b)
+assume im already in /Problem1 from part a)
+
+
+$chmod u+r answer.txt
+$cat answer.txt
+
+This file contains a message with the answer to part 1. The message is:
+
+"Look what I learned in 206!"
+
+Congratulations if you read this.
+
+so I give the read permission
+
+
